@@ -28,3 +28,40 @@
     <link rel="stylesheet" href="./assets/style/index.css" type="text/css" />
   </head>
 </html>
+<body>
+    <div class="container">
+      <h1 class="title">Alarm Clock</h1>
+      <div class="clock-container">
+        <div id="clock" class="clock"></div>
+      </div>
+      <div id="alarm-details">
+        <i class="fa-solid fa-bell bell-icon"></i>
+        <span id="alarm-hour"></span>:<span id="alarm-minutes"></span>
+      </div>
+      <div class="alarm-controls">
+        <form id="alarmForm">
+          <input
+            type="number"
+            id="hour"
+            min="0"
+            max="23"
+            placeholder="Hour"
+            required
+          />
+          <input
+            type="number"
+            id="minute"
+            min="0"
+            max="59"
+            placeholder="Minute"
+            required
+          />
+
+          <button type="submit" class="set-alarm-btn">Set Alarm</button>
+        </form>
+      </div>
+      <audio id="alarmSound" src="./assets/audio/alarm-sound.wav"></audio>
+    </div>
+    <script src="./assets/script/index.js"></script>
+  </body>
+</html>
